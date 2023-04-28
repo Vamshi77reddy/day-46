@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link
+href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;
+0,200;0,300;0,400;0,600;1,500&display=swap"
+rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600
+&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="homepage.js"></script>
+
+</head>
+<body>
+    <header class="header-content header"> 
+        <div class="logo-content">
+            <img src="asserts\logo1.png" width="5%" height="5%" alt="Emp Logo">
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
+             </div>
+        </div>
+    </header>
+<div class="main-content">
+ <!-- UC 2 --> 
+ <div class="header-content"> 
+    <div class="emp-detail-text"> 
+        Employee Details 
+        <div class="emp-count">10</div>
+    </div> 
+    <a href="index.html" class="add-button">
+    <img src="asserts\add.jpg"  alt="" width="20%" height="20%">Add User</a> 
+</div> <!-- header-content -->
+<table id="display" class="table">
+    <tr>
+       <th></th> 
+       <th>Name</th> 
+       <th>Gender</th> 
+       <th>Department</th> 
+       <th>Salary</th> 
+       <th>Start Date</th> 
+       <th>Actions</th>
+   </tr>
+   <tr> 
+       <td><img class="profile" alt="" src="asserts\Ellipse -3.png" width="20%" height="20%"> 
+       </td> 
+       <td>Narayan Mahadevan</td> 
+       <td>Male</td> 
+       <td><div class='dept-label'>HR</div>
+           <div class='dept-label'>Finance</div>
+       </td>
+       <td>3000000</td>
+       <td>1 Nov 2020</td>
+       <td> 
+           <img id="1" onclick="remove(this)" alt="delete" src="asserts\delete.jpg"width="3%" height="3%">
+           <img id="1" alt="edit" onclick="update(this)" src="asserts\edit.jpg"width="3%" height="3%"> 
+       </td> 
+   </tr>  
+</table>
+
+</div>
+<div class="table-main">
+    <table id="display" class="table">
+    </table>
+    </div>
+</div>
+
+</body>
+</html>
